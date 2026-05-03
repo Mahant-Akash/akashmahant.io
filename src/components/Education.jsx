@@ -34,7 +34,7 @@ export default function Education() {
       <div className="mx-auto max-w-container">
         <h2 className="text-display-lg text-text mb-16">Education</h2>
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-12 lg:grid-cols-2" style={{ alignItems: 'flex-start' }}>
           {/* Degree card */}
           <div className="rounded-card bg-bg border border-border p-8 shadow-section">
             <h3 className="text-display-md text-text mb-2">{degree.degree}</h3>

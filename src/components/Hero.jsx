@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center justify-center bg-surface px-8 pt-16"
+      className="relative flex min-h-[70vh] items-center justify-center bg-surface px-8 pt-16"
     >
       {/* Subtle grid overlay */}
       <div
