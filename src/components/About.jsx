@@ -31,43 +31,38 @@ export default function About() {
 
   return (
     <section id="about" className="py-section bg-surface px-8">
-      <div className="mx-auto max-w-container">
+      <div className="mx-auto max-w-[860px]">
         <h2 className="text-display-lg text-text mb-16">About</h2>
 
-        <div className="grid gap-12 lg:grid-cols-2">
-          {/* Left column */}
-          <div>
-            <p className="text-body-xl text-muted mb-6">
-              I'm a finance professional with hands-on experience in financial
-              reporting, grant accounting, and process automation. I enjoy
-              combining financial analysis with technology to improve
-              efficiency and decision-making.
-            </p>
-            <p className="text-body-xl text-muted mb-8">
-              Currently, I'm focused on building data-driven financial tools
-              and deepening my expertise as a CFA Level I Candidate.
-            </p>
+        <p className="text-body-xl text-muted mb-6">
+          I'm a finance professional with hands-on experience in financial
+          reporting, grant accounting, and process automation. I enjoy
+          combining financial analysis with technology to improve
+          efficiency and decision-making.
+        </p>
+        <p className="text-body-xl text-muted mb-8">
+          Currently, I'm focused on building data-driven financial tools
+          and deepening my expertise as a CFA Level I Candidate.
+        </p>
 
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="http://linkedin.com/in/akashmahant"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-btn text-bg rounded-pill bg-text px-7 py-3 shadow-btn no-underline inline-block transition-shadow duration-200 hover:shadow-lg hover:shadow-black/10"
-              >
-                LinkedIn
-              </a>
-              <a
-                href="mailto:akash.r.mahant@gmail.com"
-                className="text-btn text-bg rounded-pill bg-text px-7 py-3 shadow-btn no-underline inline-block transition-shadow duration-200 hover:shadow-lg hover:shadow-black/10"
-              >
-                Email
-              </a>
-            </div>
-          </div>
+        <div className="flex flex-wrap gap-4 mb-16">
+          <a
+            href="http://linkedin.com/in/akashmahant"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-btn text-bg rounded-pill bg-text px-7 py-3 shadow-btn no-underline inline-block transition-shadow duration-200 hover:shadow-lg hover:shadow-black/10"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="mailto:akash.r.mahant@gmail.com"
+            className="text-btn text-bg rounded-pill bg-text px-7 py-3 shadow-btn no-underline inline-block transition-shadow duration-200 hover:shadow-lg hover:shadow-black/10"
+          >
+            Email
+          </a>
+        </div>
 
-          {/* Right column — ElevenLabs-style skill card grid */}
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        <div className="grid gap-6 lg:grid-cols-3">
             {skills.map((s) => (
               <div
                 key={s.category}
@@ -112,7 +107,6 @@ export default function About() {
               </div>
             ))}
           </div>
-        </div>
       </div>
     </section>
   );
