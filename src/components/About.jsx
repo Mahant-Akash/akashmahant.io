@@ -30,7 +30,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-section bg-bg px-8">
+    <section id="about" className="py-section bg-surface px-8">
       <div className="mx-auto max-w-container">
         <h2 className="text-display-lg text-text mb-16">About</h2>
 
@@ -66,21 +66,46 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right column — skill cards in a single column */}
-          <div className="grid gap-6">
+          {/* Right column — ElevenLabs-style skill card grid */}
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
             {skills.map((s) => (
               <div
                 key={s.category}
-                className="rounded-card bg-surface border border-border p-8 shadow-card"
+                className="rounded-[16px] bg-bg p-7 shadow-card xl:p-8"
+                style={{
+                  boxShadow:
+                    'rgba(0,0,0,0.06) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.04) 0px 2px 4px',
+                }}
               >
-                <h3 className="text-body-md text-text mb-4">
+                <h3
+                  className="mb-5 text-[13px] font-medium uppercase tracking-wider text-subtle"
+                  style={{ fontFamily: 'var(--font-body)' }}
+                >
                   {s.category}
                 </h3>
-                <ul className="space-y-2.5">
-                  {s.items.map((item) => (
-                    <li key={item} className="text-body text-muted flex items-start gap-2.5">
-                      <span className="mt-1.5 shrink-0 text-warm">—</span>
-                      <span>{item}</span>
+                <ul className="space-y-0">
+                  {s.items.map((item, i) => (
+                    <li
+                      key={item}
+                      className={
+                        i === 0 ? '' : 'border-t pt-3.5'
+                      }
+                      style={{
+                        borderColor: 'rgba(0,0,0,0.05)',
+                      }}
+                    >
+                      <span
+                        className="font-body"
+                        style={{
+                          fontSize: '16px',
+                          lineHeight: '1.50',
+                          letterSpacing: '0.16px',
+                          color: '#4e4e4e',
+                          fontWeight: 400,
+                        }}
+                      >
+                        {item}
+                      </span>
                     </li>
                   ))}
                 </ul>
