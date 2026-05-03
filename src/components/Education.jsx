@@ -30,13 +30,13 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="py-section bg-bg px-8">
-      <div className="mx-auto max-w-container">
+    <section id="education" className="py-section bg-surface px-8">
+      <div className="mx-auto max-w-[860px]">
         <h2 className="text-display-lg text-text mb-16">Education</h2>
 
-        <div className="grid gap-12 lg:grid-cols-2" style={{ alignItems: 'flex-start' }}>
+        <div className="grid gap-6">
           {/* Degree card */}
-          <div className="rounded-card bg-bg border border-border p-8 shadow-section">
+          <div className="rounded-card bg-bg border border-border p-7 shadow-section">
             <h3 className="text-display-md text-text mb-2">{degree.degree}</h3>
             <p className="text-body-xl text-muted mb-1">{degree.school}</p>
             <div className="flex items-center gap-3 text-caption text-subtle">
@@ -47,7 +47,7 @@ export default function Education() {
           </div>
 
           {/* Coursework card */}
-          <div className="rounded-card bg-bg border border-border p-8 shadow-section">
+          <div className="rounded-card bg-bg border border-border p-7 shadow-section">
             <h3 className="text-display-md text-text mb-6">Key Coursework</h3>
 
             <div className="mb-6">
@@ -77,9 +77,9 @@ export default function Education() {
         </div>
 
         {/* Certifications */}
-        <div className="mt-8 rounded-card bg-bg border border-border p-8 shadow-section">
+        <div className="mt-12 rounded-card bg-bg border border-border p-7 shadow-section">
           <h3 className="text-display-md text-text mb-6">Certifications &amp; Achievements</h3>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2">
             {certifications.map((c) => (
               <div
                 key={c}

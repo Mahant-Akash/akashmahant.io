@@ -62,13 +62,13 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="py-section bg-surface px-8">
-      <div className="mx-auto max-w-container">
+      <div className="mx-auto max-w-[860px]">
         <h2 className="text-display-lg text-text mb-4">Featured Projects</h2>
-        <p className="text-body text-subtle mb-16">
+        <p className="text-body text-subtle mb-12">
           A selection of projects at the intersection of finance, analytics, and technology.
         </p>
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-6 lg:grid-cols-2">
           {projects.map((p) => (
             <ProjectCard
               key={p.title}
