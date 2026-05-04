@@ -50,28 +50,30 @@ export default function Education() {
           <div className="rounded-card bg-bg border border-border p-7 shadow-section">
             <h3 className="text-display-md text-text mb-6">Key Coursework</h3>
 
-            <div className="mb-6">
-              <h4 className="text-body-md text-text mb-2">Finance &amp; Investment</h4>
-              <ul className="space-y-2.5">
-                {financeCoursework.map((c) => (
-                  <li key={c} className="text-body text-muted flex items-start gap-2.5">
-                    <span className="mt-1.5 shrink-0 text-warm">—</span>
-                    <span>{c}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <div className="grid gap-6 lg:grid-cols-2">
+              <div className="rounded-[16px] bg-bg p-7 shadow-card" style={{ boxShadow: 'rgba(0,0,0,0.06) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.04) 0px 2px 4px' }}>
+                <h4 className="text-body-md text-text mb-2">Finance &amp; Investment</h4>
+                <ul className="space-y-2.5">
+                  {financeCoursework.map((c) => (
+                    <li key={c} className="text-body text-muted flex items-start gap-2.5">
+                      <span className="mt-1.5 shrink-0 text-warm">—</span>
+                      <span>{c}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-            <div>
-              <h4 className="text-body-md text-text mb-2">Quantitative &amp; Technical</h4>
-              <ul className="space-y-2.5">
-                {quantitativeCoursework.map((c) => (
-                  <li key={c} className="text-body text-muted flex items-start gap-2.5">
-                    <span className="mt-1.5 shrink-0 text-warm">—</span>
-                    <span>{c}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="rounded-[16px] bg-bg p-7 shadow-card" style={{ boxShadow: 'rgba(0,0,0,0.06) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.04) 0px 2px 4px' }}>
+                <h4 className="text-body-md text-text mb-2">Quantitative &amp; Technical</h4>
+                <ul className="space-y-2.5">
+                  {quantitativeCoursework.map((c) => (
+                    <li key={c} className="text-body text-muted flex items-start gap-2.5">
+                      <span className="mt-1.5 shrink-0 text-warm">—</span>
+                      <span>{c}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
