@@ -14,13 +14,13 @@ export default function Nav({ scrolled }) {
   return (
     <nav
       className={
-        "fixed top-0 left-0 right-0 z-50 bg-bg border-b border-border transition-shadow duration-300 " +
+        "fixed top-0 left-0 right-0 z-50 bg-canvas border-b border-border transition-shadow duration-300 " +
         (scrolled ? "shadow-card" : "")
       }
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="mx-auto max-w-container px-8 xl:px-0">
+      <div className="mx-auto max-w-container px-8 xl:px-12">
         <div className="flex h-16 items-center justify-between">
           <a
             href="#hero"
@@ -30,7 +30,7 @@ export default function Nav({ scrolled }) {
           </a>
 
           {/* Desktop links */}
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-8 md:flex md:flex-1 md:justify-center">
             {links.map((l) => (
               <a
                 key={l.href}
