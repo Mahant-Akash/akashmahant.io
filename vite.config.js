@@ -8,7 +8,7 @@ const __dir = fileURLToPath(new URL(".", import.meta.url));
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/personal-portfolio/",
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve(__dir, "./src"),
