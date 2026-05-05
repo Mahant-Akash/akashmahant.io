@@ -6,19 +6,19 @@ import {
 } from "@/components/ui/carousel";
 
 const tools = [
-  { id: "excel",        description: "Microsoft Excel",         image: "/personal-portfolio/microsoft-excel.svg" },
-  { id: "powerpoint",   description: "Microsoft PowerPoint",    image: "/personal-portfolio/microsoft-powerpoint.svg" },
-  { id: "powerbi",      description: "Microsoft Power BI",      image: "/personal-portfolio/Microsoft_Power_BI.svg" },
-  { id: "powerautomate",description: "Microsoft Power Automate",image: "/personal-portfolio/Microsoft_Power_Automate.svg" },
-  { id: "python",       description: "Python",                  image: "/personal-portfolio/python.svg" },
-  { id: "github",       description: "GitHub",                  image: "/personal-portfolio/github.svg" },
-  { id: "tableau",      description: "Tableau",                 image: "/personal-portfolio/tableau.svg" },
-  { id: "sap",          description: "SAP",                     image: "/personal-portfolio/sap.svg" },
-  { id: "oracle",       description: "Oracle",                  image: "/personal-portfolio/oracle.svg" },
-  { id: "bc",           description: "Microsoft Business Central", image: "/personal-portfolio/Dynamics_365_Business_Central.svg" },
-  { id: "claude",       description: "Claude Code",             image: "/personal-portfolio/claudecode.svg" },
-  { id: "codex",        description: "Codex",                   image: "/personal-portfolio/codex.svg" },
-  { id: "infor",        description: "Infor Lawson",            image: "/personal-portfolio/Infor_lawson.svg" },
+  { id: "excel",        description: "Microsoft Excel",         image: "/microsoft-excel.svg" },
+  { id: "powerpoint",   description: "Microsoft PowerPoint",    image: "/microsoft-powerpoint.svg" },
+  { id: "powerbi",      description: "Microsoft Power BI",      image: "/Microsoft_Power_BI.svg" },
+  { id: "powerautomate",description: "Microsoft Power Automate",image: "/Microsoft_Power_Automate.svg" },
+  { id: "python",       description: "Python",                  image: "/python.svg" },
+  { id: "github",       description: "GitHub",                  image: "/github.svg" },
+  { id: "tableau",      description: "Tableau",                 image: "/tableau.svg" },
+  { id: "sap",          description: "SAP",                     image: "/sap.svg" },
+  { id: "oracle",       description: "Oracle",                  image: "/oracle.svg" },
+  { id: "bc",           description: "Microsoft Business Central", image: "/Dynamics_365_Business_Central.svg" },
+  { id: "claude",       description: "Claude Code",             image: "/claudecode.svg" },
+  { id: "codex",        description: "Codex",                   image: "/codex.svg" },
+  { id: "infor",        description: "Infor Lawson",            image: "/Infor_lawson.svg" },
 ];
 
 export default function ToolsCarousel() {
