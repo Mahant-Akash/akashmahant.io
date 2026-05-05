@@ -30,7 +30,7 @@ export default function Hero() {
 
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
-            href="/MahantAkash_Resume.pdf"
+            href="/personal-portfolio/MahantAkash_Resume.pdf"
             className="text-btn text-bg rounded-pill bg-text px-6 py-3.5 shadow-btn no-underline inline-block transition-shadow duration-200 hover:shadow-lg hover:shadow-black/10"
             target="_blank"
             rel="noopener noreferrer"

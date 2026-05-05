@@ -40,14 +40,6 @@ export default function Nav({ scrolled }) {
                 {l.label}
               </a>
             ))}
-            <a
-              href="/MahantAkash_Resume.pdf"
-              className="text-btn text-bg rounded-pill bg-text px-6 py-2.5 shadow-btn no-underline inline-block transition-shadow duration-200 hover:shadow-lg hover:shadow-black/10"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
           </div>
 
           {/* Mobile toggle */}
@@ -89,14 +81,6 @@ export default function Nav({ scrolled }) {
                 {l.label}
               </a>
             ))}
-            <a
-              href="/MahantAkash_Resume.pdf"
-              className="text-btn text-bg rounded-pill bg-text px-6 py-2.5 shadow-btn no-underline inline-block"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
           </div>
         )}
       </div>
