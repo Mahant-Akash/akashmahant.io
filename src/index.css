@@ -2,6 +2,7 @@
 
 @theme {
   --color-bg: #ffffff;
+  --color-canvas: #f5f5f5;
   --color-surface: #f5f5f5;
   --color-stone: rgba(245, 242, 239, 0.8);
   --color-text: #000000;
