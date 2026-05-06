@@ -12,6 +12,7 @@ const tools = [
   { id: "powerautomate",description: "Microsoft Power Automate",image: "/Microsoft_Power_Automate.svg" },
   { id: "python",       description: "Python",                  image: "/python.svg" },
   { id: "github",       description: "GitHub",                  image: "/github.svg" },
+  { id: "vscode",       description: "VS Code",                 image: "/vs-code.svg" },
   { id: "tableau",      description: "Tableau",                 image: "/tableau.svg" },
   { id: "sap",          description: "SAP",                     image: "/sap.svg" },
   { id: "oracle",       description: "Oracle",                  image: "/oracle.svg" },
