@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-section bg-bg px-8">
+    <section id="contact" className="py-section bg-canvas-soft px-8">
       <div className="mx-auto max-w-container">
         <h2 className="text-display-lg text-text mb-4 text-center">Contact</h2>
         <p className="text-body text-subtle mb-16 text-center">
@@ -8,7 +8,7 @@ export default function Contact() {
         </p>
 
         {/* Warm stone CTA block */}
-        <div className="mx-auto max-w-container-sm rounded-section bg-stone p-12 text-center shadow-warm-lg">
+        <div className="mx-auto max-w-container-sm rounded-section bg-surface-strong p-12 text-center shadow-warm-lg">
           <p className="text-body-lg text-text mb-8">
             Feel free to reach out or explore my work.
           </p>

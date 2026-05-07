@@ -14,7 +14,7 @@ export default function Nav({ scrolled }) {
   return (
     <nav
       className={
-        "fixed top-0 left-0 right-0 z-50 bg-canvas border-b border-border transition-shadow duration-300 " +
+        "fixed top-0 left-0 right-0 z-50 bg-canvas transition-shadow duration-300 " +
         (scrolled ? "shadow-card" : "")
       }
       role="navigation"
@@ -35,7 +35,7 @@ export default function Nav({ scrolled }) {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-nav text-subtle no-underline border-b border-subtle/12 hover:border-b-0 transition-all duration-200 hover:text-text"
+                className="text-nav text-muted no-underline border-b border-border-strong/40 hover:border-b-0 transition-all duration-200 hover:text-text"
               >
                 {l.label}
               </a>
@@ -75,7 +75,7 @@ export default function Nav({ scrolled }) {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-nav text-subtle block py-3 no-underline border-b border-subtle/12 hover:border-b-0 transition-all duration-200 hover:text-text"
+                className="text-nav text-muted block py-3 no-underline border-b border-border-strong/40 hover:border-b-0 transition-all duration-200 hover:text-text"
                 onClick={() => setMobileOpen(false)}
               >
                 {l.label}

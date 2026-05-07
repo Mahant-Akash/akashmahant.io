@@ -35,7 +35,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-section bg-surface px-8">
+    <section id="experience" className="py-section bg-canvas px-8">
       <div className="mx-auto max-w-[860px]">
         <h2 className="text-display-lg text-text mb-16">Experience</h2>
 
@@ -43,11 +43,7 @@ export default function Experience() {
           {experiences.map((e) => (
             <div
               key={e.role}
-              className="rounded-[16px] bg-bg p-7 xl:p-8"
-              style={{
-                boxShadow:
-                  'rgba(0,0,0,0.06) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.04) 0px 2px 4px',
-              }}
+              className="rounded-card bg-surface-card p-7 shadow-card xl:p-8"
             >
               <div className="mb-5">
                 <h3 className="text-display-md text-text mb-1">{e.role}</h3>

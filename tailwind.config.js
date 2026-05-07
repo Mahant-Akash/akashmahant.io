@@ -5,14 +5,40 @@ export default {
   theme: {
     extend: {
       colors: {
+        /* Surface */
         bg: "#ffffff",
+        canvas: "#f5f5f5",
+        "canvas-soft": "#fafafa",
         surface: "#f5f5f5",
-        stone: "rgba(245,242,239,0.8)",
-        text: "#000000",
-        muted: "#4e4e4e",
-        subtle: "#777169",
-        border: "#e5e5e5",
-        grid: "#7fffff",
+        "surface-card": "#ffffff",
+        "surface-strong": "#f0efed",
+
+        /* Ink — ElevenLabs warm near-black */
+        ink: "#292524",
+        "ink-active": "#0c0a09",
+        text: "var(--color-ink)",
+        "text-active": "var(--color-ink-active)",
+
+        /* Text */
+        muted: "#777169",
+        "muted-soft": "#a8a29e",
+        subtle: "var(--color-muted)",
+
+        /* Hairlines */
+        border: "#e7e5e4",
+        "border-soft": "#f0efed",
+        "border-strong": "#d6d3d1",
+
+        /* Atmospheric gradient stops */
+        mint: "#a7e5d3",
+        peach: "#f4c5a8",
+        lavender: "#c8b8e0",
+        sky: "#a8c8e8",
+        rose: "#e8b8c4",
+
+        /* Semantic */
+        success: "#16a34a",
+        error: "#dc2626",
       },
       fontFamily: {
         display: ["'Cormorant Garamond'", "'Waldenburg'", "serif"],
@@ -32,18 +58,18 @@ export default {
         ],
         "display-lg": [
           "36px",
-          { lineHeight: "1.17", letterSpacing: "normal" },
+          { lineHeight: "1.17", letterSpacing: "-0.72px" },
         ],
         "display-md": [
           "32px",
-          { lineHeight: "1.13", letterSpacing: "normal" },
+          { lineHeight: "1.13", letterSpacing: "-0.48px" },
         ],
         "body-xl": ["20px", { lineHeight: "1.35" }],
         "body-lg": ["18px", { lineHeight: "1.60", letterSpacing: "0.18px" }],
         body: ["16px", { lineHeight: "1.50", letterSpacing: "0.16px" }],
-        "body-md": ["16px", { lineHeight: "1.50", letterSpacing: "0.16px" }],
+        "body-md": ["14px", { lineHeight: "1.43", letterSpacing: "0.14px" }],
         nav: ["15px", { lineHeight: "1.47", letterSpacing: "0.15px" }],
-        btn: ["15px", { lineHeight: "1.47" }],
+        btn: ["15px", { lineHeight: "1.00", letterSpacing: "0px" }],
         caption: ["14px", { lineHeight: "1.50", letterSpacing: "0.14px" }],
         small: ["13px", { lineHeight: "1.38" }],
         micro: ["12px", { lineHeight: "1.33" }],
@@ -53,9 +79,8 @@ export default {
       letterSpacing: {
         display: "-0.96px",
         body: "0.16px",
-        btn: "0.15px",
+        btn: "0",
         micro: "0.14px",
-        cta: "0.7px",
       },
       lineHeight: {
         display: "1.08",
@@ -70,7 +95,7 @@ export default {
       borderRadius: {
         warm: "30px",
         pill: "9999px",
-        card: "20px",
+        card: "16px",
         section: "24px",
       },
       boxShadow: {

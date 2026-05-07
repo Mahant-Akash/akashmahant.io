@@ -30,7 +30,7 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="py-section bg-surface px-8">
+    <section id="education" className="py-section bg-canvas px-8">
       <div className="mx-auto max-w-[860px]">
         <h2 className="text-display-lg text-text mb-16">Education</h2>
 
@@ -51,7 +51,7 @@ export default function Education() {
             <h3 className="text-display-md text-text mb-6">Key Coursework</h3>
 
             <div className="grid gap-6 lg:grid-cols-2">
-              <div className="rounded-[16px] bg-bg p-7 shadow-card" style={{ boxShadow: 'rgba(0,0,0,0.06) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.04) 0px 2px 4px' }}>
+              <div className="rounded-card bg-surface-card p-7 shadow-card">
                 <h4 className="text-body-md text-text mb-2">Finance &amp; Investment</h4>
                 <ul className="space-y-2.5">
                   {financeCoursework.map((c) => (
@@ -63,7 +63,7 @@ export default function Education() {
                 </ul>
               </div>
 
-              <div className="rounded-[16px] bg-bg p-7 shadow-card" style={{ boxShadow: 'rgba(0,0,0,0.06) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.04) 0px 2px 4px' }}>
+              <div className="rounded-card bg-surface-card p-7 shadow-card">
                 <h4 className="text-body-md text-text mb-2">Quantitative &amp; Technical</h4>
                 <ul className="space-y-2.5">
                   {quantitativeCoursework.map((c) => (

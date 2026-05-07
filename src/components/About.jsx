@@ -30,7 +30,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-section bg-surface px-8">
+    <section id="about" className="py-section bg-canvas-soft px-8">
       <div className="mx-auto max-w-[860px]">
         <h2 className="text-display-lg text-text mb-16">About</h2>
 
@@ -66,14 +66,10 @@ export default function About() {
             {skills.map((s) => (
               <div
                 key={s.category}
-                className="rounded-[16px] bg-bg p-7 shadow-card xl:p-8"
-                style={{
-                  boxShadow:
-                    'rgba(0,0,0,0.06) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.04) 0px 2px 4px',
-                }}
+                className="rounded-card bg-surface-card p-7 shadow-card xl:p-8"
               >
                 <h3
-                  className="mb-5 text-[13px] font-medium uppercase tracking-wider text-subtle"
+                  className="mb-5 text-[13px] font-medium uppercase tracking-wider text-muted"
                   style={{ fontFamily: 'var(--font-body)' }}
                 >
                   {s.category}
@@ -90,14 +86,7 @@ export default function About() {
                       }}
                     >
                       <span
-                        className="font-body"
-                        style={{
-                          fontSize: '16px',
-                          lineHeight: '1.50',
-                          letterSpacing: '0.16px',
-                          color: '#4e4e4e',
-                          fontWeight: 400,
-                        }}
+                        className="text-body"
                       >
                         {item}
                       </span>
