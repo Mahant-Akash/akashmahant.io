@@ -26,4 +26,3 @@ dist/
 
 # Claude Code session data (not needed in repo)
 .claude/
-CLAUDE.md
