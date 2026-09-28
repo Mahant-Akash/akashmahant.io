@@ -2,13 +2,26 @@ import { ExperienceCard } from "./ui/Card";
 
 const experiences = [
   {
+    role: "Senior Research Associate",
+    company: "M. De Groote & Co.",
+    period: "Aug 2026 – Present",
+    location: "Remote, USA",
+    bullets: [
+      "Support daily reconciliation of portfolio positions and market data across internal systems and external feeds, investigating and flagging discrepancies to maintain data accuracy for research and trading teams.",
+      "Monitor market trends, security pricing, and macroeconomic developments across securities and commodities, compiling findings into recurring reports and updates for senior analysts and portfolio managers.",
+      "Assist in maintaining and updating financial models, including DCF, comparable-company analysis, and earnings forecasts, supporting ongoing investment research and portfolio analysis.",
+    ],
+  },
+  {
     role: "Staff Accountant",
     company: "Volunteers of America – Greater New York",
     period: "Jan 2025 – Apr 2026",
     location: "New York, NY",
     bullets: [
-      "Reduced document processing time by 85% through automation",
-      "Performed variance analysis and resolved discrepancies proactively",
+      "Prepared and submitted quarterly financial claims up to $200K for DASH- and DHS-funded programs, ensuring accurate expenditure reporting, budget compliance, and audit-ready documentation for funder and regulatory review.",
+      "Cut manual invoice-processing time by 85% by designing a process-automation workflow in Microsoft Power Automate (using Copilot to accelerate framework design), freeing capacity for payment reconciliation and vendor/bank communication.",
+      "Performed daily variance analysis on payment records in Microsoft Business Central, resolving discrepancies, reducing outstanding issues by 30%, and maintaining 99%+ accuracy.",
+      "Partnered with program managers on budgeting and forecasting, delivering actual-vs-plan variance insights that informed monthly resource-allocation decisions.",
     ],
   },
   {
@@ -17,18 +30,20 @@ const experiences = [
     period: "Aug 2019 – Jul 2022",
     location: "Mumbai, India",
     bullets: [
-      "Automated financial workflows, improving efficiency by 90%",
-      "Consistently exceeded productivity targets (124%)",
+      "Built Excel VBA macros to automatically organize, filter, and reconcile large-scale P2P datasets, improving processing efficiency by 90% and generating $1,100 in quarterly cost savings by cutting manual review hours.",
+      "Maintained 100% accuracy processing 500+ invoices weekly across 25 queues, consistently exceeding productivity benchmarks at 124% of target.",
+      "Produced analytical dashboards tracking productivity, errors, and team performance, giving leadership visibility to identify process bottlenecks and drive data-driven staffing decisions for a US-based retail client.",
+      "Served as subject-matter expert (SME) for P2P processes, training and mentoring 7+ team members on Oracle Cloud workflows and reporting standards, improving ramp-up consistency across the team.",
     ],
   },
   {
-    role: "Financial Advisor",
+    role: "Financial Analyst",
     company: "Money Honey Financial Services",
     period: "Jul 2018 – Nov 2018",
     location: "Mumbai, India",
     bullets: [
-      "Managed 200+ client portfolios with 100% retention",
-      "Advised on diversified investment strategies",
+      "Developed investment strategies for diversified client portfolios (up to $750K) across equity, fixed income, and alternative instruments, achieving 100% client retention across 200+ clients.",
+      "Advised clients on mutual funds, fixed deposits, debentures, and SIPs; built detailed financial reports and presentations in Excel and PowerPoint.",
     ],
   },
 ];

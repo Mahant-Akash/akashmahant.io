@@ -10,23 +10,22 @@ export default function Education() {
     "Financial Statement Analysis",
     "Corporate Finance",
     "Investment Management",
+    "Portfolio Construction",
     "Fixed Income & Derivatives",
-    "Portfolio Construction & Trading Analytics",
   ];
 
   const quantitativeCoursework = [
     "Econometrics",
     "Quantitative Hedge Fund Strategies",
     "Data Visualization",
-    "Python for Financial Applications",
-    "Introduction to R",
+    "Bloomberg & Thomson Reuters",
   ];
 
   const certifications = [
     "Bloomberg Market Concepts Certification",
-    "Fundamentals of Consulting — Harvard Business Publishing",
+    "Fundamentals of Consulting Certification — Harvard Business Publishing",
     "Accenture Star of Business Award (2020, 2022)",
-    "Money Honey Excellence Award (2018)",
+    "CFA Level I Candidate",
   ];
 
   return (

@@ -3,28 +3,28 @@ export default function About() {
     {
       category: "Finance & Accounting",
       items: [
-        "Financial Reporting & Analysis",
-        "Grant Accounting & Compliance",
-        "Budgeting & Forecasting",
-        "Account Reconciliation",
+        "Financial Modeling (DCF, Comps, Earnings Forecast)",
+        "Investment Research & Market Analysis",
+        "Portfolio Position Reconciliation",
+        "Budgeting & Forecasting (Actual vs. Plan)",
       ],
     },
     {
-      category: "Technical",
+      category: "Finance Operations",
       items: [
-        "Advanced Excel (Macros, Pivot Tables)",
-        "Power BI & Tableau",
-        "Process Automation (Power Automate)",
-        "Bloomberg Terminal",
+        "General Ledger & Accounts Payable Reconciliation",
+        "Financial & Management Reporting",
+        "Grant Accounting & Audit Support",
+        "Procure-to-Pay (P2P) & GAAP",
       ],
     },
     {
-      category: "Core Strengths",
+      category: "Tools & Technology",
       items: [
-        "Process Improvement",
-        "Analytical Thinking",
-        "Attention to Detail",
-        "Cross-functional Collaboration",
+        "Advanced Excel (VBA Macros, Pivot Tables)",
+        "Power BI, Tableau & Alteryx",
+        "Python, SQL & Power Automate",
+        "Bloomberg Terminal & Business Central",
       ],
     },
   ];
