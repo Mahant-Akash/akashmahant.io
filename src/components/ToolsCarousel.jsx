@@ -28,19 +28,10 @@ export default function ToolsCarousel() {
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   return (
-    <section
-      id="tools"
-      className="py-section bg-bg px-8"
-      style={{ fontFamily: "var(--font-body)" }}
-    >
-      <div className="mx-auto max-w-[960px] text-center">
-        <h2
-          className="mb-16 text-display-md text-text"
-          style={{ fontFamily: "var(--font-display)", fontWeight: 300 }}
-        >
-          Tools I Use to Build and Automate
-        </h2>
-      </div>
+    <div id="tools" className="relative pb-10">
+      <p className="text-caption mb-6 text-center font-medium uppercase tracking-widest text-muted">
+        Tools &amp; Technologies
+      </p>
 
       <div className="relative">
         <div className="mx-auto flex items-center justify-center lg:max-w-5xl">
@@ -64,17 +55,15 @@ export default function ToolsCarousel() {
                   key={tool.id}
                   className="basis-1/3 pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6"
                 >
-                  <div className="flex shrink-0 flex-col items-center justify-center gap-3 py-8 px-2">
-                      <div className="flex items-center gap-2.5">
-                        <img
-                          src={tool.image}
-                          alt={tool.description}
-                          className="h-7 shrink-0 object-contain"
-                        />
-                        <span className="text-xs font-medium text-muted whitespace-nowrap">
-                          {tool.description}
-                        </span>
-                      </div>
+                  <div className="flex items-center justify-center gap-2.5 px-2 py-8">
+                    <img
+                      src={tool.image}
+                      alt={tool.description}
+                      className="h-7 shrink-0 object-contain"
+                    />
+                    <span className="text-xs font-medium text-muted whitespace-nowrap">
+                      {tool.description}
+                    </span>
                   </div>
                 </CarouselItem>
               ))}
@@ -82,9 +71,9 @@ export default function ToolsCarousel() {
           </Carousel>
         </div>
 
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-[15%] bg-gradient-to-r from-bg to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-[15%] bg-gradient-to-l from-bg to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-[15%] bg-gradient-to-r from-canvas to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-[15%] bg-gradient-to-l from-canvas to-transparent" />
       </div>
-    </section>
+    </div>
   );
 }

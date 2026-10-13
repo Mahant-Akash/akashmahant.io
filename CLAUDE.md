@@ -32,9 +32,9 @@ src/App.jsx                 # Root layout — mounts sections top-to-bottom, man
 src/index.css               # Tailwind @theme tokens, base layer, utility classes
 src/components/             # Page sections (one component per section)
   Nav.jsx                   # Fixed top nav with mobile hamburger toggle
-  Hero.jsx                  # Landing hero with gradient orbs and CTA buttons
+  Hero.jsx                  # Landing hero with gradient orbs, CTA buttons, and the tools strip at its bottom
   About.jsx                 # Bio + skills grid
-  ToolsCarousel.jsx         # Auto-scrolling tool logos via Embla carousel
+  ToolsCarousel.jsx         # Auto-scrolling tool logos via Embla carousel (rendered inside Hero, not a standalone section)
   Projects.jsx              # Featured projects (data: inline `projects` array)
   Experience.jsx            # Work history (data: inline `experiences` array)
   Education.jsx             # Degree, coursework, certifications
