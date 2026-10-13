@@ -15,7 +15,7 @@ export function ProjectCard({ title, date, description, highlights, links, class
         <ul className="mb-6 space-y-2">
           {highlights.map((h, i) => (
             <li key={i} className="text-caption text-muted flex items-start gap-2.5">
-              <span className="mt-1.5 shrink-0 text-warm">—</span>
+              <span className="mt-1.5 shrink-0 text-muted-soft">—</span>
               <span>{h}</span>
             </li>
           ))}
@@ -44,14 +44,14 @@ export function ExperienceCard({ role, company, period, location, bullets, class
   return (
     <div
       className={
-        "rounded-card bg-bg border border-border p-8 shadow-card " +
+        "rounded-card bg-surface-card p-7 shadow-card xl:p-8 " +
         className
       }
     >
       <div className="mb-5">
         <h3 className="text-display-md text-text mb-1">{role}</h3>
         <div className="flex flex-wrap items-center gap-2 text-body-md text-text">
-          <span className="font-body-md">{company}</span>
+          <span className="font-medium">{company}</span>
           <span className="text-subtle">{"·"}</span>
           <span className="text-subtle text-body">{period}</span>
           {location && (
@@ -66,7 +66,7 @@ export function ExperienceCard({ role, company, period, location, bullets, class
         <ul className="space-y-2.5">
           {bullets.map((b, i) => (
             <li key={i} className="text-body text-muted flex items-start gap-3">
-              <span className="mt-1.5 shrink-0 text-warm">—</span>
+              <span className="mt-1.5 shrink-0 text-muted-soft">—</span>
               <span>{b}</span>
             </li>
           ))}
@@ -76,7 +76,7 @@ export function ExperienceCard({ role, company, period, location, bullets, class
   );
 }
 
-export function InfoCard({ className = "" }) {
+export function InfoCard({ children, className = "" }) {
   return (
     <div
       className={
@@ -84,7 +84,7 @@ export function InfoCard({ className = "" }) {
         className
       }
     >
-      <slot />
+      {children}
     </div>
   );
 }

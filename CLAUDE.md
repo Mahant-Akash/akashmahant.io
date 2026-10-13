@@ -51,7 +51,7 @@ src/components/ui/          # Reusable primitives
 - **Data-first sections**: `Projects`, `Experience`, and `ToolsCarousel` define their data as top-level constants (`const projects = [...]`) then map over them. This is the pattern for adding/updating content — edit the constant, not individual JSX.
 - **Section layout convention**: Each section component renders a `<section id="...">` with `py-section` (120px vertical padding), and contains an inner `mx-auto max-w-[860px]` or `max-w-container` wrapper for content.
 - **Typography scale**: Use the Tailwind utility classes defined in `src/index.css` (`text-display`, `text-body-lg`, `text-caption`, etc.) rather than raw `text-*` sizes. These encode font-family, weight, line-height, and letter-spacing together.
-- **Color tokens**: Custom colors are defined as CSS variables in the `@theme` block (e.g. `--color-mint`, `--color-peach`). Use them via Tailwind's arbitrary value syntax: `text-[var(--color-mint)]`. The `tailwind.config.js` extends these with short aliases like `mint`, `peach`, `lavender`, `sky`, `rose` for use as `bg-mint`, `border-lavender`, etc.
+- **Color tokens**: Custom colors are defined as CSS variables in the `@theme` block (e.g. `--color-mint`, `--color-peach`). Tailwind v4 turns each `--color-*` token into utilities automatically (`bg-mint`, `border-lavender`, etc.), or use arbitrary value syntax: `text-[var(--color-mint)]`. There is no `tailwind.config.js` — `src/index.css` is the single source of truth (Tailwind v4 CSS-first config). Only use classes backed by a token in `@theme`; anything else silently generates no CSS.
 - **Card styling**: Use the shadow and radius tokens — `shadow-card`, `shadow-warm-lg`, `rounded-card`. Avoid raw box-shadow values; they're not in the design system.
 
 ### External dependencies worth knowing
@@ -65,5 +65,5 @@ src/components/ui/          # Reusable primitives
 ## Design system highlights
 
 - **Fonts**: Display = Cormorant Garamond 300; Body = DM Sans 400/500; Mono = Geist Mono.
-- **Color palette**: Warm stone/neutrals (`ink`, `muted`, `border`) with atmospheric accent gradients (mint, peach, lavender, sky, rose). Dark mode is not implemented — `darkMode: "class"` is in tailwind.config but unused.
+- **Color palette**: Warm stone/neutrals (`ink`, `muted`, `border`) with atmospheric accent gradients (mint, peach, lavender, sky, rose). Dark mode is not implemented.
 - **Spacing scale**: Custom `section` (120px) and `section-sm` (80px) utilities are defined for vertical rhythm between sections.

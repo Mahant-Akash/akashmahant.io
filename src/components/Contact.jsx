@@ -22,7 +22,7 @@ export default function Contact() {
             </a>
             <a
               href="tel:+15513445273"
-              className="text-btn rounded-warm bg-stone px-6 py-3 shadow-warm no-underline inline-block transition-shadow duration-200 hover:shadow-warm-lg"
+              className="text-btn text-text rounded-warm bg-bg px-6 py-3 shadow-warm no-underline inline-block transition-shadow duration-200 hover:shadow-warm-lg"
             >
               +1 (551) 344-5273
             </a>

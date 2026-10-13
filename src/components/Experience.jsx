@@ -56,35 +56,14 @@ export default function Experience() {
 
         <div className="space-y-6">
           {experiences.map((e) => (
-            <div
+            <ExperienceCard
               key={e.role}
-              className="rounded-card bg-surface-card p-7 shadow-card xl:p-8"
-            >
-              <div className="mb-5">
-                <h3 className="text-display-md text-text mb-1">{e.role}</h3>
-                <div className="flex flex-wrap items-center gap-2 text-body-md text-text">
-                  <span className="font-body-md">{e.company}</span>
-                  <span className="text-subtle">{"·"}</span>
-                  <span className="text-subtle text-body">{e.period}</span>
-                  {e.location && (
-                    <>
-                      <span className="text-subtle">{"·"}</span>
-                      <span className="text-subtle text-body">{e.location}</span>
-                    </>
-                  )}
-                </div>
-              </div>
-              {e.bullets && e.bullets.length > 0 && (
-                <ul className="space-y-2.5">
-                  {e.bullets.map((b, i) => (
-                    <li key={i} className="text-body text-muted flex items-start gap-3">
-                      <span className="mt-1.5 shrink-0 text-warm">—</span>
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
+              role={e.role}
+              company={e.company}
+              period={e.period}
+              location={e.location}
+              bullets={e.bullets}
+            />
           ))}
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const links = [
   { label: "About", href: "#about" },
@@ -10,6 +10,15 @@ const links = [
 
 export default function Nav({ scrolled }) {
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") setMobileOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [mobileOpen]);
 
   return (
     <nav
@@ -35,7 +44,7 @@ export default function Nav({ scrolled }) {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-nav text-muted no-underline border-b border-border-strong/40 hover:border-b-0 transition-all duration-200 hover:text-text"
+                className="text-nav text-muted no-underline border-b border-border-strong/40 hover:border-transparent transition-all duration-200 hover:text-text"
               >
                 {l.label}
               </a>
@@ -75,7 +84,7 @@ export default function Nav({ scrolled }) {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-nav text-muted block py-3 no-underline border-b border-border-strong/40 hover:border-b-0 transition-all duration-200 hover:text-text"
+                className="text-nav text-muted block py-3 no-underline border-b border-border-strong/40 hover:border-transparent transition-all duration-200 hover:text-text"
                 onClick={() => setMobileOpen(false)}
               >
                 {l.label}

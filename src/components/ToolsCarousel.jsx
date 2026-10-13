@@ -23,6 +23,10 @@ const tools = [
 ];
 
 export default function ToolsCarousel() {
+  const prefersReducedMotion =
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   return (
     <section
       id="tools"
@@ -42,13 +46,17 @@ export default function ToolsCarousel() {
         <div className="mx-auto flex items-center justify-center lg:max-w-5xl">
           <Carousel
             opts={{ loop: true, speed: 20 }}
-            plugins={[
-              AutoScroll({
-                playOnInit: true,
-                stopOnInteraction: false,
-                stopDelay: 400,
-              }),
-            ]}
+            plugins={
+              prefersReducedMotion
+                ? []
+                : [
+                    AutoScroll({
+                      playOnInit: true,
+                      stopOnInteraction: false,
+                      stopDelay: 400,
+                    }),
+                  ]
+            }
           >
             <CarouselContent className="-ml-2">
               {tools.map((tool) => (
@@ -63,7 +71,7 @@ export default function ToolsCarousel() {
                           alt={tool.description}
                           className="h-7 shrink-0 object-contain"
                         />
-                        <span className="text-xs font-medium text-muted-foreground whitespace-nowrap">
+                        <span className="text-xs font-medium text-muted whitespace-nowrap">
                           {tool.description}
                         </span>
                       </div>

@@ -1,6 +1,6 @@
 export function BlackPill({ children, href, className = "" }) {
   const content = (
-    <span className="text-btn text-bg font-body-md text-pill bg-text px-8 py-3.5 shadow-btn block text-center transition-shadow duration-200 hover:shadow-lg hover:shadow-black/10">
+    <span className="text-btn text-bg font-medium rounded-pill bg-text px-8 py-3.5 shadow-btn block text-center transition-shadow duration-200 hover:shadow-lg hover:shadow-black/10">
       {children}
     </span>
   );
@@ -23,7 +23,7 @@ export function BlackPill({ children, href, className = "" }) {
 
 export function WhitePill({ children, href, className = "" }) {
   const content = (
-    <span className="text-btn text-text font-body-md text-pill bg-bg border border-border px-8 py-3.5 shadow-card block text-center transition-shadow duration-200 hover:shadow-card-lg">
+    <span className="text-btn text-text font-medium rounded-pill bg-bg border border-border px-8 py-3.5 shadow-card block text-center transition-shadow duration-200 hover:shadow-card-lg">
       {children}
     </span>
   );
@@ -39,7 +39,7 @@ export function WhitePill({ children, href, className = "" }) {
 export function WarmStone({ children, href, className = "" }) {
   const content = (
     <span
-      className="text-btn text-text font-body-md text-warm bg-stone shadow-warm block text-center transition-shadow duration-200 hover:shadow-warm-lg"
+      className="text-btn text-text font-medium rounded-warm bg-surface-strong shadow-warm block text-center transition-shadow duration-200 hover:shadow-warm-lg"
       style={{
         paddingLeft: "14px",
         paddingRight: "20px",

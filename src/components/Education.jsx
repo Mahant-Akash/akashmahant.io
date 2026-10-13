@@ -55,7 +55,7 @@ export default function Education() {
                 <ul className="space-y-2.5">
                   {financeCoursework.map((c) => (
                     <li key={c} className="text-body text-muted flex items-start gap-2.5">
-                      <span className="mt-1.5 shrink-0 text-warm">—</span>
+                      <span className="mt-1.5 shrink-0 text-muted-soft">—</span>
                       <span>{c}</span>
                     </li>
                   ))}
@@ -67,7 +67,7 @@ export default function Education() {
                 <ul className="space-y-2.5">
                   {quantitativeCoursework.map((c) => (
                     <li key={c} className="text-body text-muted flex items-start gap-2.5">
-                      <span className="mt-1.5 shrink-0 text-warm">—</span>
+                      <span className="mt-1.5 shrink-0 text-muted-soft">—</span>
                       <span>{c}</span>
                     </li>
                   ))}

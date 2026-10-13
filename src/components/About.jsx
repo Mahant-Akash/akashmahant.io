@@ -47,7 +47,7 @@ export default function About() {
 
         <div className="flex flex-wrap gap-4 mb-16">
           <a
-            href="http://linkedin.com/in/akashmahant"
+            href="https://www.linkedin.com/in/akashmahant"
             target="_blank"
             rel="noopener noreferrer"
             className="text-btn text-bg rounded-pill bg-text px-7 py-3 shadow-btn no-underline inline-block transition-shadow duration-200 hover:shadow-lg hover:shadow-black/10"
