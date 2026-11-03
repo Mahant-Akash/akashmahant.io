@@ -28,10 +28,16 @@ export default function ToolsCarousel() {
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   return (
-    <div id="tools" className="relative pb-10">
-      <p className="text-caption mb-6 text-center font-medium uppercase tracking-widest text-muted">
-        Tools &amp; Technologies
-      </p>
+    <div id="tools" className="relative border-t border-border pb-14 pt-10">
+      <div className="mx-auto mb-8 max-w-container-sm px-6 text-center">
+        <p className="text-eyebrow text-muted-soft">
+          Tools I use daily
+        </p>
+        <p className="text-body-md mx-auto mt-3 max-w-[520px] text-muted">
+          The tools behind my day-to-day work — from month-end close to
+          automated reporting.
+        </p>
+      </div>
 
       <div className="relative">
         <div className="mx-auto flex items-center justify-center lg:max-w-5xl">
@@ -55,13 +61,13 @@ export default function ToolsCarousel() {
                   key={tool.id}
                   className="basis-1/3 pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6"
                 >
-                  <div className="flex items-center justify-center gap-2.5 px-2 py-8">
+                  <div className="flex items-center justify-center gap-2.5 px-2 py-6 opacity-75 transition-opacity duration-300 hover:opacity-100">
                     <img
                       src={tool.image}
                       alt={tool.description}
                       className="h-7 shrink-0 object-contain"
                     />
-                    <span className="text-xs font-medium text-muted whitespace-nowrap">
+                    <span className="text-caption font-medium text-muted whitespace-nowrap">
                       {tool.description}
                     </span>
                   </div>
